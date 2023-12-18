@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/LinearLayout1" android:background="@color/pastelblue" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="italic|bold" android:textColor="@color/egeetouch_commercial_background" android:ellipsize="none" android:gravity="center" android:id="@+id/TextView_lockname" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:text="LockName" android:singleLine="false"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/event_icon_24" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="15sp" android:textStyle="italic" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/TextView_share_on_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="LockSharedOn"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/mail_outline_24" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp"/>
+        <TextView android:textSize="15sp" android:textStyle="italic" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/textView_shared_to_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="LockSharedOn"/>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textStyle="italic" android:textColor="@color/green_1" android:id="@+id/textView_start_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="LockSharedOn"/>
+    <TextView android:textSize="15sp" android:textStyle="italic" android:textColor="@color/red" android:id="@+id/textView_end_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="LockSharedOn"/>
+</LinearLayout>

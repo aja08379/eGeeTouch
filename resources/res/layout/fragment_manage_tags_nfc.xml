@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/LinearLayout_tag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentTop="true">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/cyanblue" android:id="@+id/textView_userlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_tags"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_above="@+id/LinearLayout_updateTaglist" android:layout_below="@+id/LinearLayout_tag">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:id="@+id/listview_taglist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:layout_marginRight="16dp" android:layout_marginBottom="5dp" android:layout_above="@+id/LinearLayout_adduser" android:layout_alignParentTop="true"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/LinearLayout_adduser" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageView_addtag" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:src="@drawable/add_tag" android:onClick="btn_add_tag_nfc" android:layout_alignParentEnd="false"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/LinearLayout_updateTaglist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true">
+                <Button android:textColor="@color/white" android:id="@+id/button_updateTagslist" android:background="@drawable/mybutton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/update_tags_list" android:onClick="btn_update_tag_lists"/>
+                <Button android:textColor="@color/white" android:id="@+id/button_retrieveTaglist" android:background="@drawable/mybutton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/retrieve_tags_list" android:onClick="btn_retrieve_tag_lists"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

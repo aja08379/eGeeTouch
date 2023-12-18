@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_rounded_corners" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:adjustViewBounds="true" android:elevation="8dp" android:outlineProvider="bounds">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/imgView" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sale__save_up_to__2_" android:scaleType="fitXY" android:adjustViewBounds="true" app:shapeAppearanceOverlay="@style/roundedimageview"/>
+        <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/imgLoad" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_auto_start="true" app:shimmer_duration="800" app:shimmer_highlight_alpha="0.1" app:shimmer_highlight_color="@color/white" app:shimmer_repeat_mode="restart" app:shimmer_shape="linear">
+            <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sale__save_up_to__2_" android:scaleType="fitXY" android:adjustViewBounds="true" android:tint="@color/cmd_text_alt" app:shapeAppearance="@style/roundedimageview"/>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/judul" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Judul"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="12dp" android:id="@+id/description" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Desc" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

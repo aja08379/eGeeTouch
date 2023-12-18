@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_login_defocus_editbox" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" app:hintTextAppearance="@style/TextInputLayout_appearance">
+                                <EditText android:id="@+id/editText_login_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email" android:inputType="textEmailAddress" style="@style/TextInputLayout_appearance"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" app:hintTextAppearance="@style/TextInputLayout_appearance">
+                                <EditText android:id="@+id/editText_login_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" android:inputType="textPassword" style="@style/TextInputLayout_appearance"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <Switch android:layout_gravity="right" android:id="@+id/switch_rmb_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:checked="false" android:textOn="@string/on" android:textOff="@string/off" android:text="@string/remember_me_q"/>
+                        <CheckBox android:id="@+id/checkBox_rmb_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/remember_me"/>
+                        <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/button_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/login" android:onClick="btn_login"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <TextView android:textSize="18sp" android:textColor="@color/cyanblue" android:id="@+id/textView_forgot_password" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/forgot_your_password_q" android:layout_weight="1" android:onClick="btn_forgotpassword"/>
+                            <TextView android:textSize="18sp" android:textColor="@color/cyanblue" android:textColorHint="@color/cyanblue" android:id="@+id/textView_createacc" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sign_up2" android:layout_weight="1" android:onClick="btn_CreateAccount" android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <TextView android:textSize="9sp" android:id="@+id/textView1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="5dp" android:text="@string/select_skip_and_explore"/>
+                        <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/button_skip" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/skip_and_explore" android:onClick="btn_skip"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <ImageView android:id="@+id/imageView1" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:src="@drawable/egeetouch_logo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

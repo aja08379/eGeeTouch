@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lock_item" android:background="@drawable/rounded_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="3dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/ImageView_lock_model" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="15dp" android:layout_marginRight="8dp" android:src="@drawable/ic_launcher"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#747f83" android:layout_gravity="center" android:id="@+id/dashboard_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="1" android:alpha="0.8"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/egeetouch_commercial_background" android:ellipsize="marquee" android:id="@+id/TextView_lockname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lock Name" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/TextView_serial" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/TextView_StartTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/TextView_EndTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/egeetouch_commercial_background" android:id="@+id/TextView_sharedByEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

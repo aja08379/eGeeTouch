@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <application name="android-egeetouch_online">
+        <serviceProfile id="/com/egeetouch" name="sapsample" role="provider" serviceImpl="com.egeetouch.egeetouch_manager.SAPServiceProvider" serviceLimit="ANY" serviceTimeout="10" version="1">
+            <supportedTransports>
+                <transport type="TRANSPORT_WIFI"/>
+                <transport type="TRANSPORT_BT"/>
+                <transport type="sweep"/>
+                <transport type="TRANSPORT_USB"/>
+            </supportedTransports>
+            <serviceChannel dataRate="low" id="123" priority="high" reliability="enable"/>
+        </serviceProfile>
+    </application>
+</resources>

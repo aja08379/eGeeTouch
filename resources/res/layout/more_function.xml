@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageView_manageuser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/function_user_icon_nfc" android:onClick="btn_manage_user_nfc"/>
+            <ImageView android:id="@+id/imageView_managetag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/function_tag_icon_nfc" android:onClick="btn_manage_tag_nfc"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageView_audittrail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/function_audit_icon_nfc" android:onClick="btn_audit_trail_nfc"/>
+            <ImageView android:id="@+id/imageView_us_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/function_backup_icon_nfc" android:onClick="btn_backup_nfc"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

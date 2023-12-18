@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/before_update" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_repair_mode" android:paddingBottom="5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:id="@+id/imageView13_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_build" app:tint="@color/red"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_repair_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPAIR MODE" android:layout_weight="1" android:textAlignment="center" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+                    <ImageView android:id="@+id/imageView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="-1" app:srcCompat="@drawable/baseline_build" app:tint="@color/red"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_warning" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_repair_mode">
+                    <ImageView android:id="@+id/imageView13_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_warning_black_24dp" app:tint="@color/egeetouch_orange"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/egeetouch_orange" android:id="@+id/tv_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warning_update" android:layout_weight="1" android:textAlignment="center" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+                    <ImageView android:id="@+id/imageView13_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_warning_black_24dp" app:tint="@color/egeetouch_orange"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout5" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_warning">
+                    <TextView android:textStyle="bold" android:textColor="@color/cmd_text" android:id="@+id/textView31" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/before_update_msg1" android:textAlignment="center"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TextView android:textColor="@color/cmd_text" android:id="@+id/textView32" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1." android:textAlignment="viewEnd" android:layout_marginEnd="10sp"/>
+                            <TextView android:textColor="@color/cmd_text" android:id="@+id/textView33" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/before_update_msg2" android:layout_weight="1"/>
+                        </TableRow>
+                        <TableRow android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TextView android:textColor="@color/cmd_text" android:id="@+id/textView34" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2." android:textAlignment="viewEnd" android:layout_marginEnd="10sp"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <TextView android:textColor="@color/cmd_text" android:id="@+id/textView35" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/before_update_msg3"/>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TextView android:textColor="@color/cmd_text" android:id="@+id/textView36" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3." android:textAlignment="viewEnd" android:layout_marginEnd="10sp"/>
+                            <TextView android:textColor="@color/cmd_text" android:id="@+id/textView37" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/before_update_msg4" android:layout_weight="1"/>
+                        </TableRow>
+                        <TextView android:textStyle="bold" android:textColor="@color/cmd_text" android:id="@+id/tv_repair_additional_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/before_update_msg5" android:textAlignment="center"/>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+                    <Button android:textStyle="bold" android:textColor="@color/white" android:id="@+id/button_update" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_firmware" android:onClick="btn_update_firmware" android:alpha="0.5"/>
+                    <Button android:textStyle="bold" android:textColor="@color/white" android:id="@+id/button_scan_dfutarg" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_affected_lock" android:onClick="btn_scan_dfutarg" android:alpha="0.5"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/repair_scan_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+                        <ProgressBar android:id="@+id/repair_progress" android:layout_width="20sp" android:layout_height="20sp" style="?android:attr/progressBarStyle"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/cmd_text" android:id="@+id/scan_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanning" android:textAlignment="center" android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_version" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_button">
+                    <TextView android:textColor="@color/cmd_text_alt" android:id="@+id/current_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/current_version" android:textAlignment="center" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                        <TextView android:textSize="16sp" android:textColor="@color/cmd_text" android:id="@+id/database_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/database_version" android:textAlignment="center"/>
+                        <ProgressBar android:id="@+id/dbv_progress" android:layout_width="20sp" android:layout_height="20sp" style="?android:attr/progressBarStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@+id/uploading" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:id="@+id/progressBar2" android:layout_width="80dp" android:layout_height="80dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="?android:attr/progressBarStyle"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/cyanblue" android:id="@+id/textView30" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DFU" app:layout_constraintBottom_toBottomOf="@+id/progressBar2" app:layout_constraintEnd_toEndOf="@+id/progressBar2" app:layout_constraintStart_toStartOf="@+id/progressBar2" app:layout_constraintTop_toTopOf="@+id/progressBar2"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <ProgressBar android:id="@+id/overall_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="0" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:textColor="@color/cmd_text" android:id="@+id/overall_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/downloading_files" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ProgressBar android:id="@+id/file_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="0" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:textColor="@color/cmd_text" android:id="@+id/file_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upload_percent" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_repair_mode">
+                <ImageView android:id="@+id/imageView13_4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_warning_black_24dp" app:tint="@color/egeetouch_orange"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/egeetouch_orange" android:id="@+id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/before_update_msg2_2" android:layout_weight="1" android:textAlignment="center" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+                <ImageView android:id="@+id/imageView13_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_warning_black_24dp" app:tint="@color/egeetouch_orange"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

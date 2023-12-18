@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/watch_group">
+        <item android:icon="@drawable/ic_baseline_watch" android:enabled="true" android:id="@+id/watch_list" android:checked="false" android:visible="false" android:title="Smart Watch List" android:checkable="false"/>
+    </group>
+    <group android:id="@+id/main_group">
+        <item android:icon="@drawable/ic_baseline_newspaper_24" android:enabled="true" android:id="@+id/news_dynamic" android:checked="false" android:visible="true" android:title="@string/news_and_updates" android:checkable="false"/>
+        <item android:icon="@drawable/shop" android:enabled="true" android:id="@+id/nav_shop" android:checked="false" android:visible="true" android:title="@string/shop" android:checkable="false"/>
+        <item android:icon="@drawable/tutorial" android:enabled="true" android:id="@+id/nav_tutorial" android:checked="false" android:visible="true" android:title="@string/tutorial" android:checkable="false"/>
+        <item android:icon="@drawable/baseline_menu_book_24" android:enabled="true" android:id="@+id/nav_manual" android:checked="false" android:visible="true" android:title="@string/tutorial_manual" android:checkable="false"/>
+        <item android:icon="@drawable/faq" android:enabled="true" android:id="@+id/nav_faq" android:checked="false" android:visible="true" android:title="@string/faq" android:checkable="false"/>
+        <item android:icon="@drawable/ic_mail_outline_black_24dp" android:enabled="true" android:id="@+id/nav_contact" android:checked="false" android:visible="true" android:title="@string/contact" android:checkable="false" android:iconTint="@color/black"/>
+        <item android:icon="@drawable/privacyicon" android:enabled="true" android:id="@+id/nav_privacy" android:checked="false" android:visible="true" android:title="@string/privacy_terms" android:checkable="false"/>
+    </group>
+    <group android:id="@+id/logout_group">
+        <item android:icon="@drawable/baseline_build" android:enabled="true" android:id="@+id/nav_dfu_repair" android:checked="false" android:visible="false" android:title="@string/firmware_repair" android:checkable="false"/>
+        <item android:icon="@drawable/logout" android:enabled="true" android:id="@+id/nav_logout" android:checked="false" android:visible="true" android:title="@string/logout" android:checkable="false"/>
+    </group>
+</menu>

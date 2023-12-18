@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_button_disconnect" android:orderInCategory="0" android:title="@string/power_off" android:showAsAction="withText|always" app:showAsAction="always"/>
+</menu>

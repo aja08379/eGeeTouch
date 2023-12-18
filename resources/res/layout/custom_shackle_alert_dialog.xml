@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rl_customDialog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <RelativeLayout android:gravity="center" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/image_closePopUp" android:background="@drawable/blue_round_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_alignParentRight="true" android:elevation="5dp" app:srcCompat="@drawable/ic_close_black_24dp"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15dp">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_inner_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/titleTv" android:background="@drawable/round_top_corner_style" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/shackle_open" android:textAlignment="center"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="15dp" android:textColor="@color/egeetouch_commercial_background" android:layout_gravity="center_horizontal" android:id="@+id/messageTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/please_close_shackle_to_lock" android:textAlignment="center"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/img_shackle" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginTop="5dp" app:srcCompat="@drawable/shackle_open"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <Button android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/btn_closeShackle" android:background="@drawable/round_bottom_corner_style" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/tap_here_if_shackle_is_closed" android:layout_weight="1" android:textAllCaps="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

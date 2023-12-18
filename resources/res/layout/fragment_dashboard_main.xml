@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/LinearLayout1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_dashboard_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <VideoView android:id="@+id/videoView1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="110dp"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/myviewpager" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="170dp"/>
+        <ImageView android:id="@+id/imageView1" android:layout_width="match_parent" android:layout_height="160dp" android:src="@drawable/dashboard"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ListView android:id="@+id/listview_dashboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/RelativeLayout1" android:layout_alignParentTop="true" android:fadeScrollbars="false" android:layout_alignParentStart="true"/>
+            <RelativeLayout android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <Button android:id="@+id/button2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88dp" android:layout_marginRight="35dp" android:text="Restore" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="btn_restore" style="?android:attr/buttonStyleSmall"/>
+                <Button android:id="@+id/button1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup" android:layout_below="@+id/button2" android:layout_alignRight="@+id/button2" android:onClick="btn_backup" style="?android:attr/buttonStyleSmall"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/imageView_addlock" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/add_icon" android:onClick="btn_add_lock"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

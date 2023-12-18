@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <application name="HelloAccessoryConsumer">
+        <serviceProfile id="/sample/hello" name="helloaccessory" role="consumer" serviceImpl="com.egeetouch.egeetouch_manager.ConsumerService" serviceLimit="ANY" serviceTimeout="10" version="1">
+            <supportedTransports>
+                <transport type="TRANSPORT_BT"/>
+                <transport type="TRANSPORT_WIFI"/>
+            </supportedTransports>
+            <serviceChannel dataRate="low" id="104" priority="low" reliability="enable"/>
+        </serviceProfile>
+    </application>
+</resources>

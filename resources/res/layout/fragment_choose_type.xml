@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/LinearLayout1" android:background="@color/float_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/head" android:background="@drawable/rounded_top_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp" android:backgroundTint="@color/cyanblue"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="18sp" android:textColor="@color/white" android:textColorLink="@color/white" android:gravity="center" android:id="@+id/textView_addlock_step4" android:background="@color/cyanblue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_lock_choose_model"/>
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:id="@+id/listview_locktype" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+</LinearLayout>

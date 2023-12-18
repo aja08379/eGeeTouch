@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_above="@+id/linearLayout_msg" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/cyanblue" android:layout_gravity="center" android:id="@+id/textView_Audit_trail_lock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="Lock Name"/>
+            <TextView android:textSize="10sp" android:textStyle="bold" android:layout_gravity="right" android:id="@+id/textView_last_updatedTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="5dp" android:text="@string/last_update"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ListView android:id="@+id/listView_access_history" android:focusable="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout_msg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/LinearLayout_button" android:layout_marginStart="0dp" android:layout_marginEnd="0dp" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <TextView android:textStyle="bold" android:id="@+id/tv_paid_version" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/paid_version" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/LinearLayout_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Button android:textColor="@color/white" android:id="@+id/Button_share" android:background="@drawable/mybutton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:text="Share" android:onClick="btn_export_access_history"/>
+                <Button android:textColor="@color/white" android:id="@+id/button_export_access_history" android:background="@drawable/mybutton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/update_audit_trail" android:onClick="btn_update_auditTrial_nfc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

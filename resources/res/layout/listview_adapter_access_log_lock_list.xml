@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/lock_serial_list" android:background="@color/pastelblue" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/ImageView_lock_model" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginLeft="10dp" android:layout_marginRight="6dp" android:src="@drawable/ic_launcher" android:contentDescription="TODO"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/egeetouch_commercial_background" android:ellipsize="marquee" android:id="@+id/TextView_serial" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:text="lock_serial" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/egeetouch_commercial_background" android:ellipsize="marquee" android:id="@+id/TextView_lockName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="6dp" android:text="lock_serial" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

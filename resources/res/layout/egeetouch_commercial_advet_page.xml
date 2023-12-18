@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/egeetouch_commercial_background" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/egee_commercial_plan_title" android:textAlignment="center"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="195dp" android:layout_margin="10dp" android:src="@drawable/advert5"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/egee_commercial_icon1"/>
+                <TextView android:textSize="15dp" android:textStyle="italic|bold" android:textColor="@color/egeetouch_commercial_background" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/egee_commercial_manage_user"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/egee_commercial_icon3"/>
+                <TextView android:textSize="15dp" android:textStyle="italic|bold" android:textColor="@color/egeetouch_commercial_background" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/egee_commercial_grant_access"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/egee_commercial_icon2"/>
+                <TextView android:textSize="15dp" android:textStyle="italic|bold" android:textColor="@color/egeetouch_commercial_background" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/egee_commercial_tracking"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/egeetouch_orange" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/egeetouch_commercial_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:text="@string/egee_commercial_ad_content" android:textAlignment="center"/>
+            </LinearLayout>
+            <TextView android:textSize="15dp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="@string/egee_commercial_contact_details" android:textAlignment="center"/>
+            <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/cyanblue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:text="@string/egee_commercial_sales_email" android:textAlignment="center"/>
+            <Button android:layout_gravity="center" android:id="@+id/btn_sendEmail" android:layout_width="150dp" android:layout_height="50dp" android:drawableTop="@drawable/ic_mail_outline_black_24dp" android:onClick="sendMail" android:backgroundTint="@color/cyanblue"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

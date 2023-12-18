@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="daily">
+        <item quantity="one">يوميًا</item>
+        <item quantity="other">كل %d أيام</item>
+    </plurals>
+    <plurals name="endByCount">
+        <item quantity="one">؛ لمرة واحدة</item>
+        <item quantity="other">؛ لـ %d من المرات</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="recurrence_end_count">
+        <item quantity="one">لـ %d حدث</item>
+        <item quantity="other">لـ %d من الأحداث</item>
+    </plurals>
+    <plurals name="recurrence_interval_daily">
+        <item quantity="one">كل %d يوم</item>
+        <item quantity="other">كل %d يوم</item>
+    </plurals>
+    <plurals name="recurrence_interval_monthly">
+        <item quantity="one">كل %d شهر</item>
+        <item quantity="other">كل %d شهر</item>
+    </plurals>
+    <plurals name="recurrence_interval_weekly">
+        <item quantity="one">كل %d أسبوع</item>
+        <item quantity="other">كل %d أسبوع</item>
+    </plurals>
+    <plurals name="recurrence_interval_yearly">
+        <item quantity="one">كل %d عام</item>
+        <item quantity="other">كل %d عام</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="one">يوم %2$s من كل أسبوع</item>
+        <item quantity="other">يوم %2$s من كل %1$d من الأسابيع</item>
+    </plurals>
+</resources>

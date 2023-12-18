@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="right" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/loto_splash" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/imageView6" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginTop="15dp" app:srcCompat="@drawable/egeetouch_logo2"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_login_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/button_fb" android:background="@drawable/mybutton_fb" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/sign_in_with_fb" android:onClick="btn_fb"/>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/button_gmail" android:background="@drawable/mybutton_google" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sign_in_with_google" android:onClick="btn_gmail"/>
+        <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/textView9" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/or" android:textAlignment="center"/>
+        <com.facebook.login.widget.LoginButton android:layout_gravity="center_horizontal" android:id="@+id/login_button_fb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textColor="@color/white" android:id="@+id/button_signup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sign_up" android:layout_weight="1" android:onClick="btn_signup"/>
+            <Button android:textColor="@color/white" android:id="@+id/button_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/login" android:layout_weight="1" android:onClick="btn_login"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

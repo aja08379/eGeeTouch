@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/LinearLayout_signup_main" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/scrollView1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_signup_defocus_editbox" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="8dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_weight="1" app:hintTextAppearance="@style/TextInputLayout_appearance">
+                                <EditText android:id="@+id/editText_share_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/share_name" android:inputType="text" style="@style/TextInputLayout_appearance"/>
+                                <requestFocus android:layout_weight="1"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" app:hintTextAppearance="@style/TextInputLayout_appearance">
+                            <EditText android:id="@+id/editText_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email" android:inputType="textEmailAddress" style="@style/TextInputLayout_appearance"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/button1_createAcc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit" android:onClick="btn_createAccount"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:id="@+id/imageView1" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:src="@drawable/egeetouch_logo" android:layout_alignParentRight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
